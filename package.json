@@ -4,10 +4,10 @@
     "description": "Converts a string to a URL friendly string",
     "main": "bundle.js",
     "scripts": {
-        "test": "rimraf coverage && nyc --reporter=lcov mocha || true && rimraf .nyc_output",
-        "docs": "rimraf docs && documentation build src/** -f html -o docs",
         "build": "npm run test && npm run docs && rollup src/cleanURL.js --o bundle.js --f cjs",
-        "clean": "rimraf coverage docs bundle.js"
+        "clean": "rimraf coverage docs bundle.js",
+        "docs": "rimraf docs && documentation build src/** -f html -o docs",
+        "test": "rimraf coverage && nyc --reporter=lcov mocha || true && rimraf .nyc_output"
     },
     "standard": {
         "env": [
