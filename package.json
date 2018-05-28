@@ -1,0 +1,30 @@
+{
+    "name": "clean-url",
+    "version": "0.0.1",
+    "description": "Converts a string to a URL friendly string",
+    "main": "bundle.js",
+    "scripts": {
+        "test": "rimraf coverage && nyc --reporter=lcov mocha || true && rimraf .nyc_output",
+        "docs": "rimraf docs && documentation build src/** -f html -o docs",
+        "build": "npm run test && npm run docs && rollup src/cleanURL.js --o bundle.js --f cjs",
+        "clean": "rimraf coverage docs bundle.js"
+    },
+    "standard": {
+        "env": [
+            "mocha"
+        ]
+    },
+    "keywords": [],
+    "author": "Brent",
+    "license": "MIT",
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "documentation": "^7.1.0",
+        "mocha": "^5.2.0",
+        "nyc": "^11.8.0",
+        "rimraf": "^2.6.2"
+    },
+    "dependencies": {
+        "rollup": "^0.59.3"
+    }
+}
