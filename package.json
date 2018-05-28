@@ -1,10 +1,10 @@
 {
-    "name": "clean-url",
+    "name": "puddletown-js-env",
     "version": "0.0.1",
     "description": "Converts a string to a URL friendly string",
     "main": "bundle.js",
     "scripts": {
-        "build": "npm run test && npm run docs && rollup src/cleanURL.js --o bundle.js --f cjs",
+        "build": "npm run test && npm run docs && rollup src/index.js --o bundle.js --f cjs",
         "clean": "rimraf coverage docs bundle.js",
         "docs": "rimraf docs && documentation build src/** -f html -o docs",
         "test": "rimraf coverage && nyc --reporter=lcov mocha || true && rimraf .nyc_output"
@@ -13,6 +13,10 @@
         "env": [
             "mocha"
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PuddletownDesign/js-env"
     },
     "keywords": [],
     "author": "Brent",

@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * A generic function you're going to replace
  *
@@ -8,4 +6,4 @@
 
 module.exports = function () {
   return true
-};
+}
