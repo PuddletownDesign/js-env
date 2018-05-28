@@ -19,7 +19,7 @@
         "build": "npm run test && npm run docs && rollup src/index.js --o bundle.js --f cjs",
         "clean": "rimraf coverage docs bundle.js",
         "docs": "rimraf docs && documentation build src/** -f html -o docs",
-        "test": "rimraf coverage && nyc --reporter=lcov mocha || true && rimraf .nyc_output"
+        "test": "rimraf coverage && nyc --reporter=lcov mocha || true && nyc report && rimraf .nyc_output"
     },
     "devDependencies": {
         "chai": "^4.1.2",
