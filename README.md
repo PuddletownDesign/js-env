@@ -1,6 +1,6 @@
-# Puddletown JS environment
+# Puddletown JS standard environment
 
-A simple starting point for developing modern javascript libraries.
+A simple starting point for developing modern javascript libraries. All included dependencies are `dev` only.
 
 ## Contains configurations and tools for:
 
@@ -8,6 +8,7 @@ A simple starting point for developing modern javascript libraries.
 -   **Code coverage** - NYC/Istanbul
 -   **Documentation** - documentation - (using standard jsdoc block style)
 -   **Bundling** - Rollup
+-   **Standard JS Formatting** 
 
 ## Getting Started
 
