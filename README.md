@@ -19,7 +19,7 @@ cd <your-project-name>
 node i
 ```
 
-## Building an library
+## Building a library
 
 This will build out all of the documentation, testing, code coverage and bundle the script with rollup. This does everything at once.
 
