@@ -1,11 +1,14 @@
-'use strict';
+(function () {
+  'use strict';
 
-/**
- * A generic function you're going to replace
- *
- * @return {boolean} - true
- */
+  /**
+   * A generic function you're going to replace
+   *
+   * @return {boolean} - true
+   */
 
-module.exports = function () {
-  return true
-};
+  module.exports = function () {
+    return true
+  };
+
+}());
