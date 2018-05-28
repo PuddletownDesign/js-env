@@ -1,7 +1,7 @@
 {
     "name": "puddletown-js-env",
     "version": "0.0.1",
-    "description": "Converts a string to a URL friendly string",
+    "description": "",
     "main": "bundle.js",
     "scripts": {
         "build": "npm run test && npm run docs && rollup src/index.js --o bundle.js --f cjs",
